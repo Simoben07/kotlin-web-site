@@ -1,136 +1,292 @@
-[//]: # (title: Hello world)
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام تتبع الشاحنات الكبيرة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="شعار نظام التتبع">
+            <h1>نظام تتبع الشاحنات الكبيرة</h1>
+        </div>
+        <nav>
+            <a href="#features">المميزات</a>
+            <a href="#pricing">الأسعار</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
 
-<no-index/>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>تتبع شاحناتك الكبيرة بكفاءة وأمان</h2>
+            <p>نظام متكامل لتتبع وإدارة أسطول الشاحنات الكبيرة الخاص بك. احصل على رؤية كاملة لتحركات شاحناتك، وتحسين الكفاءة التشغيلية، وتوفير الوقت والمال.</p>
+            <a href="#contact" class="btn">ابدأ الآن</a>
+        </div>
+    </section>
 
-<tldr>
-    <p><img src="icon-1.svg" width="20" alt="First step" /> <strong>Hello world</strong><br />
-        <img src="icon-2-todo.svg" width="20" alt="Second step" /> <a href="kotlin-tour-basic-types.md">Basic types</a><br />
-        <img src="icon-3-todo.svg" width="20" alt="Third step" /> <a href="kotlin-tour-collections.md">Collections</a><br />
-        <img src="icon-4-todo.svg" width="20" alt="Fourth step" /> <a href="kotlin-tour-control-flow.md">Control flow</a><br />
-        <img src="icon-5-todo.svg" width="20" alt="Fifth step" /> <a href="kotlin-tour-functions.md">Functions</a><br />
-        <img src="icon-6-todo.svg" width="20" alt="Sixth step" /> <a href="kotlin-tour-classes.md">Classes</a><br />
-        <img src="icon-7-todo.svg" width="20" alt="Final step" /> <a href="kotlin-tour-null-safety.md">Null safety</a></p>
-</tldr>
-
-Here is a simple program that prints "Hello, world!":
-
-```kotlin
-fun main() {
-    println("Hello, world!")
-    // Hello, world!
-}
-```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="hello-world-kotlin"}
-
-In Kotlin:
-
-* `fun` is used to declare a function
-* The `main()` function is where your program starts from
-* The body of a function is written within curly braces `{}`
-* [`println()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/println.html) and [`print()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/print.html) functions print their arguments to standard output
-
-A function is a set of instructions that performs a specific task. Once you create a function, you can use it whenever 
-you need to perform that task, without having to write the instructions all over again. Functions are discussed in more
-detail in a couple of chapters. Until then, all examples use the `main()` function.
-
-## Variables
-
-All programs need to be able to store data, and variables help you to do just that. In Kotlin, you can declare:
-
-* Read-only variables with `val`
-* Mutable variables with `var`
-
-> You can't change a read-only variable once you have given it a value.
-> 
-{type ="note"}
-
-To assign a value, use the assignment operator `=`.
-
-For example:
-
-```kotlin
-fun main() { 
-//sampleStart
-    val popcorn = 5    // There are 5 boxes of popcorn
-    val hotdog = 7     // There are 7 hotdogs
-    var customers = 10 // There are 10 customers in the queue
+    <section id="features" class="features">
+        <h2>المميزات الرئيسية</h2>
+        <div class="feature-card">
+            <img src="assets/icon1.png" alt="تتبع مباشر">
+            <h3>تتبع مباشر</h3>
+            <p>راقب موقع شاحناتك في الوقت الفعلي على الخريطة.</p>
+        </div>
+        <div class="feature-card">
+            <img src="assets/icon2.png" alt="تحليل البيانات">
+            <h3>تحليل البيانات</h3>
+            <p>احصل على تقارير مفصلة حول أداء الشاحنات، وكفاءة الوقود، وسلوك القيادة.</p>
+        </div>
+         <div class="feature-card">
+            <img src="assets/icon3.png" alt="تنبيهات فورية">
+            <h3>تنبيهات فورية</h3>
+            <p>احصل على تنبيهات فورية في حالة حدوث أي مشكلة، مثل تجاوز السرعة أو الخروج عن المسار المحدد.</p>
+        </div>
+         <div class="feature-card">
+            <img src="assets/icon4.png" alt="تكامل كامل">
+            <h3>تكامل كامل</h3>
+            <p>يتكامل النظام بسهولة مع الأنظمة الأخرى التي تستخدمها.</p>
+        </div>
+    </section>
     
-    // Some customers leave the queue
-    customers = 8
-    println(customers)
-    // 8
-//sampleEnd
+      <section id="pricing" class="pricing">
+        <h2>باقات الأسعار</h2>
+          <div class="pricing-card">
+                <h3>الباقة الأساسية</h3>
+                <p class="price">150$ / شهرياً</p>
+                <ul>
+                    <li>تتبع مباشر</li>
+                    <li>تنبيهات أساسية</li>
+                     <li>دعم فني 24/7</li>
+                </ul>
+                <a href="#contact" class="btn">اشترك الآن</a>
+          </div>
+            <div class="pricing-card">
+                <h3>الباقة الاحترافية</h3>
+                <p class="price">300$ / شهرياً</p>
+                <ul>
+                    <li>تتبع مباشر</li>
+                    <li>تنبيهات متقدمة</li>
+                    <li>تحليل بيانات</li>
+                    <li>دعم فني 24/7</li>
+                    
+                </ul>
+               <a href="#contact" class="btn">اشترك الآن</a>
+          </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>تواصل معنا</h2>
+        <form>
+            <input type="text" placeholder="اسمك">
+            <input type="email" placeholder="بريدك الإلكتروني">
+            <textarea placeholder="رسالتك"></textarea>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 نظام تتبع الشاحنات الكبيرة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    direction: rtl;
+    text-align: right;
 }
-```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-variables"}
 
-> Variables can be declared outside the `main()` function at the beginning of your program. Variables declared in this way
-> are said to be declared at **top level**.
-> 
-{style="tip"}
+header {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-As `customers` is a mutable variable, its value can be reassigned after declaration.
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
 
-> We recommend that you declare all variables as read-only (`val`) by default. Declare mutable variables (`var`) only if 
-> necessary.
-> 
-{style="note"}
+.logo img {
+    height: 50px;
+    margin-left: 10px;
+}
 
-## String templates
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
 
-It's useful to know how to print the contents of variables to standard output. You can do this with **string templates**. 
-You can use template expressions to access data stored in variables and other objects, and convert them into strings.
-A string value is a sequence of characters in double quotes `"`. Template expressions always start with a dollar sign `$`.
+nav a:hover {
+    color: #007bff;
+}
 
-To evaluate a piece of code in a template expression, place the code within curly braces `{}` after the dollar sign `$`.
+.hero {
+    background-image: url('assets/truck-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
 
-For example:
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-```kotlin
-fun main() { 
-//sampleStart
-    val customers = 10
-    println("There are $customers customers")
-    // There are 10 customers
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h2{
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+     background: #fff;
+}
+
+.feature-card img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+.pricing {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.pricing h2{
+     margin-bottom: 40px;
+}
+.pricing-card {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.pricing-card h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li{
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.price {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+// هنا يمكنك إضافة أي أكواد JavaScript إضافية إذا لزم الأمر
+// على سبيل المثال: إضافة تأثيرات على الصفحة، أو التعامل مع نماذج الإدخال.
+document.addEventListener('DOMContentLoaded', function() {
+    // يمكنك إضافة أوامر JavaScript هنا بعد تحميل الصفحة بالكامل
     
-    println("There are ${customers + 1} customers")
-    // There are 11 customers
-//sampleEnd
-}
-```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-string-templates"}
+    // مثال: إضافة تأثير تمرير سلس عند النقر على روابط القائمة
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50, // تعويض بسيط لضمان عدم حجب الرأس
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 
-For more information, see [String templates](strings.md#string-templates).
-
-You will notice that there aren't any types declared for variables. Kotlin has inferred the type itself: `Int`. This tour
-explains the different Kotlin basic types and how to declare them in the [next chapter](kotlin-tour-basic-types.md).
-
-## Practice
-
-### Exercise {initial-collapse-state="collapsed" collapsible="true"}
-
-Complete the code to make the program print `"Mary is 20 years old"` to standard output:
-
-|---|---|
-```kotlin
-fun main() {
-    val name = "Mary"
-    val age = 20
-    // Write your code here
-}
-```
-{validate="false" kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-hello-world-exercise"}
-
-|---|---|
-```kotlin
-fun main() {
-    val name = "Mary"
-    val age = 20
-    println("$name is $age years old")
-}
-```
-{initial-collapse-state="collapsed" collapsible="true" collapsed-title="Example solution" id="kotlin-tour-hello-world-solution"}
-
-## Next step
-
-[Basic types](kotlin-tour-basic-types.md)
+  });
